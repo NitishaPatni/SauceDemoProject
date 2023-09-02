@@ -34,6 +34,12 @@ public class ReadConfigFile
 		return url; 
 	}
 	
+	public String getTitle() 
+	{
+		String getTitle = pro.getProperty("title");
+		return getTitle;
+	}
+	
 	public String getUserName() 
 	{
 		String username = pro.getProperty("username");
@@ -58,6 +64,13 @@ public class ReadConfigFile
 	{
 		String addtoCartbutton =pro.getProperty("AddtoCarts");
 		return addtoCartbutton;
+		
+	}
+	
+	public String CheckPrice() 
+	{
+		String checkoutPrice = pro.getProperty("checkoutPrice");
+		return checkoutPrice;
 		
 	}
 	
@@ -93,11 +106,17 @@ public class ReadConfigFile
 	{
 		String zipCode = pro.getProperty("zipCode");
 		return zipCode;
-		
 	}
 	
+	public String lastPrice() 
+	{
+		String endPrice = pro.getProperty("itemtotal");
+		return endPrice;
+	}
 	
-	
-	
-	
+	public String TaxPrice() 
+	{
+		String taxprice = pro.getProperty("tax");
+		return taxprice;
+	}
 }

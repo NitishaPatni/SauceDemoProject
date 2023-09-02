@@ -6,7 +6,7 @@
       <class name="Test.test">
         <methods>
           <include name="openandlaunchBrowserURL"/>
-          <include name="Checkoutbutton"/>
+          <include name="finishbutton"/>
         </methods>
       </class> <!-- Test.test -->
     </classes>

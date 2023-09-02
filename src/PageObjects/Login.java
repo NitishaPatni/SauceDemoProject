@@ -13,7 +13,8 @@ import org.openqa.selenium.support.PageFactory;
 public class Login 
 {
 	static WebDriver driver;
-	int maxPrice;
+	public int maxPrice;
+	
 	List<Integer> prices = new ArrayList<>();
 	
 	@FindBy(how = How.ID, using = "user-name")
@@ -104,7 +105,7 @@ public class Login
 						}
 				}
 		}
-	
+		
 	public void Cartbutton()
 	{
 		ClickonCart.click();
